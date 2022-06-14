@@ -1,11 +1,13 @@
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
-import picture from '../../assets/pessoa.webp';
+import picture from '../../assets/me.webp';
 
 function HomeHero() {
   return (
     <Container data-aos="fade-up">
-      <img src={picture} alt="My picture" />
-      <div>
+      <div className="image-div">
+        <img src={picture} alt="My picture" />
+      </div>
+      <div className='content-div'>
         <TextContainer>
           <h1>Hi,</h1>
           <h2>I'm Luiz Henrique</h2>

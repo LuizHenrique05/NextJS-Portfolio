@@ -8,35 +8,35 @@ export const Container = styled.section`
     justify-content: center;
     margin-top: 5rem;
 
-    > img {
-        width: 40rem;
-        flex: 1;
+    > .image-div {
+        border-radius: 50%;
+        flex: 1 1 40%;
+        width: 30rem;
+        text-align: center;
+        height: 30rem;
+
+        img {
+            max-height: 100%;
+            width: auto;
+            border-radius: 50%;
+        }
     }
 
-    > div {
-        flex: 4;
-    }
-
-    @media (max-width: 1450px) {
-        > img {
-            width: 30rem;
-        }
-
-        > div {
-            flex: 1;
-        }
+    > .content-div {
+        flex: 1 1 40%;
     }
 
     @media (max-width: 1000px) {
-        > img {
+        > .image-div {
             width: 22rem;
+            height: 22rem;
         }
     }
 
     @media (max-width: 700px) {
         flex-direction: column-reverse;
 
-        > div {
+        > .content-div {
             width: 100%;
         }
     }
