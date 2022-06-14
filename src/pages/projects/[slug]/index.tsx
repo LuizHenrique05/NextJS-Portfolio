@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Head from 'next/head'
 
 interface ProjectProps {
     project: IProject;
@@ -34,6 +35,15 @@ export default function Project({project}: ProjectProps) {
 
     return (
         <ProjectContainer>
+            <Head>
+                <title>{project.title} | My Portfolio - My Project</title>
+                <meta name="description" content={project.description} />
+                <meta property="og:image" content="/ogimage.png" />
+                <meta property="og:image:secure_url" content="/ogimage.png" />
+                <meta name="twitter:image" content="/ogimage.png" />
+                <meta name="twitter:image:src" content="/ogimage.png" />
+                <meta property="og:description" content={project.description}/>
+            </Head>
             <Header />
             <ProjectTitle title={project.title} type={project.type}/>
 

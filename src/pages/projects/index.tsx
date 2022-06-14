@@ -8,6 +8,7 @@ import ProjectSection from '../../components/ProjectSection';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 interface HomeProps {
     projectMain: any;
@@ -23,6 +24,15 @@ export default function Projects({ projectMain, projectsGeneral, projectFirstTim
 
     return (
         <ProjectsContainer>
+            <Head>
+                <title>Projects | My Portfolio - My Projects</title>
+                <meta name="description" content="I'm a Full Stack Web Developer and here I show a little about myself, my projects, projects I'm doing." />
+                <meta property="og:image" content="/ogimage.png" />
+                <meta property="og:image:secure_url" content="/ogimage.png" />
+                <meta name="twitter:image" content="/ogimage.png" />
+                <meta name="twitter:image:src" content="/ogimage.png" />
+                <meta property="og:description" content="I'm a Full Stack Web Developer and here I show a little about myself, my projects, projects I'm doing."/>
+            </Head>
             <Header />
 
             <main className='container' data-aos="fade-up">
