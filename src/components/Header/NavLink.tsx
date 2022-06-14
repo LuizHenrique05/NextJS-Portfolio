@@ -5,14 +5,14 @@ import { NavLinkContainer } from './styles';
 interface Props {
     title: string;
     path: string;
+    includes?: boolean;
 }
 
-export default function NavLink({ title, path }: Props) {
+export default function NavLink({ title, path, includes = false }: Props) {
     const router = useRouter();
-    const isActive = router.pathname === path;
     
     return (
-        <NavLinkContainer isActive={isActive}>
+        <NavLinkContainer isActive={includes ? router.pathname.includes(path) : path === router.pathname}>
             <Link href={path}>
                 <a>{title}</a>
             </Link>

@@ -1,0 +1,20 @@
+{
+  "id": "91ff269d-1bb1-4797-97cd-df93499a1600",
+  "uid": "aut-quia-et",
+  "type": "general",
+  "data": {
+    "title": "evolve dynamic infrastructures",
+    "type": "drive web-enabled content",
+    "link": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Mollit exercitation amet esse incididunt pariatur nisi laboris duis ullamco sit voluptate occaecat. Minim deserunt consectetur adipisicing ex. Magna velit dolore qui ad incididunt eiusmod magna in irure exercitation ad cillum elit.",
+        "spans": []
+      }
+    ]
+  }
+}

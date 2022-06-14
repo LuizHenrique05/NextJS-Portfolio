@@ -20,7 +20,7 @@ export const Container = styled.footer`
             color: ${({ theme }) => theme.secondary};
             text-transform: uppercase;
             font-weight: 300;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         > section {

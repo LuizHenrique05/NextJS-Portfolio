@@ -18,8 +18,8 @@ function Footer() {
             <div className="container">
                 <button type="button" onClick={handleScrollTop}>Back to the top</button>
                 <section>
-                    <AiOutlineGithub onClick={() => handleRedirect('https://github.com')}/>
-                    <AiFillLinkedin onClick={() => handleRedirect('https://linkedin.com')}/>
+                    <AiOutlineGithub onClick={() => handleRedirect('https://github.com/LuizHenrique05')}/>
+                    <AiFillLinkedin onClick={() => handleRedirect('https://www.linkedin.com/in/luiz-henrique-40b7b5171/')}/>
                 </section>
             </div>
         </Container>
