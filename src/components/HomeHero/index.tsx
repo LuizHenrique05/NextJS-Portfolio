@@ -1,5 +1,5 @@
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
-import picture from '../../assets/me.webp';
+import picture from '../../assets/me-nobg.png';
 
 function HomeHero() {
   return (
