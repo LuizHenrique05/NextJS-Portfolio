@@ -9,7 +9,7 @@ function ProjectTitle({ title, type }: ProjectTitleProps) {
   return (
     <Container>
         <div className="overlay" />
-        <section>
+        <section data-aos="fade-right">
             <h1>{title}</h1>
             <h2>Type: {type}</h2>
         </section>

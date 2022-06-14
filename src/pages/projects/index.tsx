@@ -5,6 +5,9 @@ import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
 import { ProjectsContainer } from '../../styles/ProjectsStyles';
 import ProjectSection from '../../components/ProjectSection';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 interface HomeProps {
     projectMain: any;
@@ -14,11 +17,15 @@ interface HomeProps {
 }
 
 export default function Projects({ projectMain, projectsGeneral, projectFirstTime, projectUpcoming }: HomeProps) {
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, [])
+
     return (
         <ProjectsContainer>
             <Header />
 
-            <main className='container'>
+            <main className='container' data-aos="fade-up">
                 <ProjectSection title="Main" projects={projectMain} />
                 <ProjectSection title="General" projects={projectsGeneral} />
                 <ProjectSection title="First Times" projects={projectFirstTime} />

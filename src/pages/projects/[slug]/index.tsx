@@ -7,6 +7,9 @@ import { getPrismicClient } from '../../../services/prismic'
 import Prismic from '@prismicio/client';
 import { ProjectContainer } from '../../../styles/ProjectStyles'
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 interface ProjectProps {
     project: IProject;
@@ -21,6 +24,9 @@ interface IProject {
 }
 
 export default function Project({project}: ProjectProps) {
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, [])
 
     const router = useRouter();
 
@@ -31,7 +37,7 @@ export default function Project({project}: ProjectProps) {
             <Header />
             <ProjectTitle title={project.title} type={project.type}/>
 
-            <main>
+            <main data-aos="fade-up">
                 <pre>{project.description}</pre>
                 <button type="button">
                     <a target="_blank" href={project.link}>See project</a>

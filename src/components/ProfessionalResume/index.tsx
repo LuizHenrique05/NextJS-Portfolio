@@ -5,7 +5,7 @@ function ProfessionalResume() {
   return (
     <Container>
         <SectionTitle title="#Professional Resume" description="all you need to know about my skills" />
-        <div className="professionals">
+        <div className="professionals" data-aos="fade-up">
             <span>
                 Creating web applications from scratch till implementation with <strong>Docker</strong> and 
                 <strong> Kubernetes (Kind)</strong>. Working locally and in a cloud provider, provisioning infrastructure with <strong>Terraform</strong>, 

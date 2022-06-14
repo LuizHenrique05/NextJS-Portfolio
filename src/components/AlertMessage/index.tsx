@@ -6,7 +6,7 @@ interface AlertMessageProps {
 
 function AlertMessage({ message }: AlertMessageProps) {
   return (
-    <Container>
+    <Container data-aos="zoom-in">
         <span>//{message}</span>
     </Container>
   );

@@ -5,7 +5,7 @@ function CurrentlyStudying() {
   return (
     <Container>
         <SectionTitle title="#Currently Studying" description="all I currently studying" />
-        <div className="study">            
+        <div className="study" data-aos="fade-up">            
             <p>• Edge Computing</p>
             <p>• Cloud Computing</p>
             <p>• Consolidating knowledge to create new features in Javascript</p>
